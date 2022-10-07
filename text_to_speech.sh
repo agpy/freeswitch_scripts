@@ -51,6 +51,7 @@ else
 fi
 sleep 3
 
+#Remove all temporary files
 if [ -f "$FILE_SRC" ] && [ -f "$FILE_DST" ]; then
     echo "$FILE_SRC and $FILE_DST exist!"
     rm "$FILE_SRC" "$FILE_DST" "$FILE_TXT" ""$TEXTFILES""
