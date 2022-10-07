@@ -1,1 +1,2 @@
+#String for insert or replace the old one in dialplan.xml
 2022-10-01 13:00:00~2022-10-01 18:00:00,2022-10-03 11:00:00~2022-10-03 20:00:00
