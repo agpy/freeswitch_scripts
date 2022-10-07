@@ -1,5 +1,6 @@
 #!/bin/bash
 
+MAINFOLDER=/path/to/mainfolder/
 #A text file with a schedule when organisation is open
 KOPEN_TXT=/path/to/mainfolder/kopen.txt
 #A text file with a schedule when organisation is closed
@@ -19,7 +20,7 @@ URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 for file in $DIR_PATH ; do
     if [ -f "$file" ]; then
       echo "$file exists!"
-      ripmime -i $file -d /root/frsw/ --overwrite --no-multiple-filenames
+      ripmime -i $file -d $MAINFOLDER --overwrite --no-multiple-filenames
       rm $file
     else
       echo "$file does not exist!"
