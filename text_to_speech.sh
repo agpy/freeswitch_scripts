@@ -1,12 +1,19 @@
 #!/bin/bash
 
 MAINFOLDER=/path/to/mainfolder/
-FILE_SRC=/path/to/mainfolder/file.ogg
-FILE_DST=/path/to/mainfolder/file.wav
-FILE_TXT=/path/to/mainfolder/file.txt
+#Message with textfile for TTS
 DIR_PATH=/path/to/mailserver/messages/new/*
+#File decapsulated from email,redy for transfer in TTS
+FILE_TXT=/path/to/mainfolder/file.txt
+#File from yandex TTS
+FILE_SRC=/path/to/mainfolder/file.ogg
+#File is redy for FreeSwitch after converting
+FILE_DST=/path/to/mainfolder/file.wav
+#Temporary files
 TEXTFILES=/path/to/mainfolder/textfile*
+#Folder on FreeSwitch for wave file
 SOUND_DIR=/path/to/freeswitch/sounds/en/us/callie/yoursounds/
+#Copy of last textfile with text for TTS
 LAST_TEXT_FILE=/path/to/mainfolder/last_text_file/lasttextfile.txt
 API_KEY=your_yandexcloud_api_key
 FOLDER_ID=your_yandexcloud_folder_id
